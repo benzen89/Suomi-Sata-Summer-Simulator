@@ -33,34 +33,12 @@ public class movesToJson : MonoBehaviour {
         myObject.positions.Add(this.transform.position);
         myObject.rotations.Add(this.transform.rotation);
         myObject.times.Add(Time.time);
-        //Debug.Log(transform.rotation);
-
-        if (Input.GetButtonDown("Fire1"))
-        {
-            SaveMovementData();
-            /*
-            string json = JsonUtility.ToJson(myObject);
-            Debug.Log(json);
-
-            //File.WriteAllText(Application.dataPath + "/Player.json", json);
-
-            System.DateTime moment = System.DateTime.Now;
-            int year = moment.Year;
-            int month = moment.Month;
-            int day = moment.Day;
-            int hour = moment.Hour;
-            int minute = moment.Minute;
-            int second = moment.Second;
-
-            File.WriteAllText(Application.dataPath + "/TrackingData/" + year + month + day + hour + minute + second + ".json", json);
-            */
-        }
     }
 
     void OnApplicationQuit()
     {
         SaveMovementData();
-        Debug.Log("Application ending after " + Time.time + " seconds");
+        Debug.Log("saved movement data to /TrackedData");
     }
 
     void SaveMovementData()
