@@ -50,7 +50,7 @@ public class movesToJson : MonoBehaviour {
             int minute = moment.Minute;
             int second = moment.Second;
 
-            File.WriteAllText(Application.dataPath + "/" + year + month + day + hour + minute + second + ".json", json);
+            File.WriteAllText(Application.dataPath + "/TrackingData/" + year + month + day + hour + minute + second + ".json", json);
         }
     }
 }
