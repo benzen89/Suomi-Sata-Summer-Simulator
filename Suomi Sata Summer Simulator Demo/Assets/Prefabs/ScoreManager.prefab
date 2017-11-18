@@ -52,5 +52,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
-  logsTotalSpawns: 0
+  totalSpawns: 0
   victoryText: {fileID: 0}
+  woodCuttinginProgress: 0
