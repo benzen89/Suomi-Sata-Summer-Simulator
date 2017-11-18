@@ -27,7 +27,6 @@ public class scoreCounter : MonoBehaviour {
 
         if(logsTotalSpawns >= 21)
         {
-            Debug.Log("You got " + score + " logs out of " + logsTotalSpawns);
             victoryText.GetComponent<TextMesh>().text = "You got " + score.ToString() + " logs out of " + logsTotalSpawns.ToString();
         }
 	}
