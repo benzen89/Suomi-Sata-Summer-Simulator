@@ -8,6 +8,7 @@ public class movesToJson : MonoBehaviour {
     MyClass myObject;
 
     bool listed;
+    public string user;
     public string limb;
 
     void Start () {
@@ -23,6 +24,7 @@ public class movesToJson : MonoBehaviour {
 
         if (!listed)
         {
+            myObject.userName = user;
             myObject.date = System.DateTime.Now.ToString();
             myObject.limb = limb;
             myObject.positions = new List<Vector3>();
@@ -63,6 +65,7 @@ public class movesToJson : MonoBehaviour {
 [System.Serializable]
 public class MyClass
 {
+    public string userName;
     public string date;
     public string limb;
     public List<Vector3> positions;

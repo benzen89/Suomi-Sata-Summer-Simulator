@@ -43,7 +43,7 @@ public class scoreCounter : MonoBehaviour {
     //Run GameEnd() whenever woodcutting game stops
     public void GameEnd()
     {
-        victoryText.GetComponent<TextMesh>().text = "You got " + score.ToString() + " logs out of " + totalSpawns.ToString();
+        victoryText.GetComponent<TextMesh>().text = "You got " + score.ToString() + " logs \n out of " + totalSpawns.ToString();
     }
 
     //Run GameRestart() when woodcutting game starts or restarts
