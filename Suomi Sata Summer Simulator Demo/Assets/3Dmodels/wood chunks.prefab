@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 114824440060518446}
   - component: {fileID: 199310264716532774}
   - component: {fileID: 198895266181466178}
+  - component: {fileID: 114546882663361436}
   m_Layer: 0
   m_Name: wood chunks
   m_TagString: Untagged
@@ -515,7 +516,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -548,7 +549,7 @@ MonoBehaviour:
     handleAnimatorMove: 0
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
-  eventHandlerComponentsAdded: 0
+  eventHandlerComponentsAdded: 1
 --- !u!114 &114538833670033130
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -877,7 +878,18 @@ MonoBehaviour:
     handleAnimatorMove: 0
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
-  eventHandlerComponentsAdded: 0
+  eventHandlerComponentsAdded: 1
+--- !u!114 &114546882663361436
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1810121637578238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -664232604, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114824440060518446
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1276,7 +1288,7 @@ MonoBehaviour:
     handleAnimatorMove: 0
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
-  eventHandlerComponentsAdded: 0
+  eventHandlerComponentsAdded: 1
 --- !u!198 &198895266181466178
 ParticleSystem:
   m_ObjectHideFlags: 1
